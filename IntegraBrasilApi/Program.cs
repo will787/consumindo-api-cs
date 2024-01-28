@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddSingleton<IEnderecoService, EnderecoService>();
+//builder.Services.AddSingleton<IEnderecoService, EnderecoService>();
 //builder.Services.AddSingleton<IBancoService, BancoService>();
 builder.Services.AddSingleton<IBrasilApi, BrasilApiRest>();
 
