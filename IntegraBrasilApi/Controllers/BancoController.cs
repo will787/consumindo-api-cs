@@ -20,8 +20,8 @@ namespace IntegraBrasilApi.Controllers
         }
 
         [HttpGet("busca/{banco}")]
-        public async Task<ActionResult> BuscarBanco([FromRoute] string banco){
-            var response = await _bancoService.BuscarBanco(banco);
+        public async Task<ActionResult> BuscarBanco([FromRoute] string codigoBanco){
+            var response = await _bancoService.BuscarBanco(codigoBanco);
             if(response.CodigoHttp == HttpStatusCode.OK){
                 return Ok(response.DadosRetorno);
             }

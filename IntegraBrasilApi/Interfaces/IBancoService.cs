@@ -8,6 +8,6 @@ namespace IntegraBrasilApi.Interfaces
 {
     public interface IBancoService
     {
-        Task<ResponseGenerico<BancoResponse>> BuscarBanco(string banco);
+        Task<ResponseGenerico<BancoResponse>> BuscarBanco(string codigoBanco);
     }
 }
